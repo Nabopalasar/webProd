@@ -1,0 +1,305 @@
+// - 992px
+    @media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 45px
+        &_subheader
+            font-size: 25px
+        &_descr
+            font-size: 16px
+
+    .mobile
+        &_item
+            width: 300px
+
+    .world
+        &_img
+            width: 100%
+// -768px
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 9px
+        &_link
+            font-size: 10px
+
+    .promo
+        &_header
+            font-size: 35px
+        &_subheader
+            font-size: 20px
+        &_descr
+            font-size: 12px
+        &_btn
+            width: 225px
+            height: 55px
+
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_oficial
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 30px
+            width: 130px
+            height: 35px
+            font-size: 10px
+    
+    .benefits
+        &_title
+            font-size: 35px
+        .row
+            .row
+                flex-direction: column
+                align-items: center
+                // height: 435px
+                margin-top: 20px
+        .benefit
+            margin-top: 15px
+
+    .mobile
+        min-height: 785px
+        &_item
+            padding-top: 40px
+            width: 213px
+            height: 215px
+            &_plus
+                left: 95px
+
+    footer
+        .content
+            .wrap
+                width: auto
+        .app
+            flex-direction: column
+            width: 147px
+            height: auto
+            &_link
+                width: 75px
+                height: 25px
+// -576px
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, .8)
+        transition: 0.6s all
+        z-index: 1
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin-top: 25px
+        &_link
+            font-size: 20px
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 25px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+
+    .subheader_btn
+        margin-top: 10px
+        float: right
+    .subheader_phone
+        text-align: right
+
+    .promo_header 
+        line-height: 45px
+
+    .benefits
+        .row
+            .row
+                height: auto
+                margin-top: 0px
+
+    .choice
+        &_car
+            display: none
+            &_mobile
+                display: block
+                img
+                    display: block
+                    margin: 15px auto 0
+        .text_mobile
+            display: block
+            text-align: center
+            color: #fff
+        .bottom
+            display: none
+    footer
+        .line
+            width: 255px
+        .content
+            flex-direction: column
+            .wrap
+                margin: 0 auto
+                order: 1
+                .social
+                    width: 230px
+                    margin-top: 14px
+            .links
+                margin: 0 auto
+                min-width: auto
+                &_primary a
+                    font-size: 12px
+                &_secondary
+                    flex-wrap: wrap
+                    & a
+                        line-height: 22px
+                        margin-right: 15px
+            .app
+                width: auto
+                flex-direction: row
+                justify-content: space-around
+                margin: 0 auto
+                order: 2
+                margin-top: 20px
+                &_link
+                    width: 99px
+                    height: 32px
+
+// -320px
+@media (max-width: 575px)
+
+    header
+        height: 30px
+    
+    nav
+        height: 30px
+        .menu
+            width: 85%
+
+    .subheader
+        height: 60px
+        &_oficial
+            display: none
+        &_phone
+            font-size: 12px
+        &_btn
+            width: 95px
+            height: 24px
+            font-size: 8px
+            margin-top: 3px
+
+    .promo
+        min-height: 400px
+        padding: 102px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            line-height: 35px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 70px
+
+    .label
+        width: 110px
+        height: 22px
+        font-size: 11px
+        line-height: 22px
+
+    .title
+        font-size: 16px
+        line-height: 16px
+        margin-top: 16px
+
+    .benefit
+        font-size: 16px
+
+    .benefit_img
+        width: 103px
+        height: 103px
+        margin-top: 20px
+
+    .subtitle
+        font-size: 14px
+        margin-top: 6px
+
+    .mobile
+        padding: 25px 0 40px 0
+        &_item
+            width: 290px
+            height: 254px
+            padding: 80px 10px 0 10px
+            margin-top: 30px
+            &_subtitle
+                font-size: 18px
+                line-height: 31px
+            &_plus
+                left: 136px
+
+    .choice
+        &_car_mobile
+            margin-top: 36px
+        .title
+            display: none
+        .subtitle
+            display: none
+        .text_mobile
+            margin-top: 23px
+            font-size: 17px
+
+    .require
+        padding-top: 22px
+        &_title
+            font-size: 16px
+            line-height: 22px
+        &_list
+            li
+                font-size: 14px
+                line-height: 22px
+        &_descr
+            font-size: 14px
+            line-height: 16px
+    
+    .world
+        .container
+            padding-top: 24px
+            min-height: 360px
+        &_check
+            a
+                font-size: 11px
+                line-height: 28px
